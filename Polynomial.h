@@ -9,7 +9,7 @@
 template <typename T>
 T absol(T val)
 {
-    return val > 0 ? val : -val;
+    return val >= 0 ? val : -val;
 }
 
 template <typename T>
