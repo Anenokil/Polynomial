@@ -5,7 +5,7 @@ typedef long double TC;
 
 int main()
 {
-    Tmp<int> a;
+    /*Tmp<int> a;*/
     const unsigned degree_p = 3;
     //const unsigned degree_q = 2;
     const unsigned size_p = degree_p + 1;

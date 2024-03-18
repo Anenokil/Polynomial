@@ -12,14 +12,12 @@ T absol(T val)
     return val >= 0 ? val : -val;
 }
 
-template <typename T>
+/*template <typename T>
 class Tmp
 {
 public:
     Tmp();
-};
-//template <typename T>
-//Tmp<T> creat();
+};*/
 
 /* return array copy */
 template <typename T>
@@ -63,22 +61,6 @@ private:
     }
 
 public:
-    /*const char* parse(const char *str)
-    {
-        std::string token_plus = "";
-        std::string str2 = std::string(str);
-        const int len = str2.length();
-        for (int i = 0; i < len; ++i) {
-            if (str2[i] == '+' || str2[i] == '-') {
-                std::cout << token_plus << "|" << str2[i] << "|";
-                token_plus = "";
-            } else if (str2[i] != ' ') {
-                token_plus += str2[i];
-            }
-        }
-        return "<";
-    }*/
-
     /* copy constructor */
     Polynom(Polynom const& p) : degree_(p.degree_), coef_(arr_cp(p.coef_, p.degree_ + 1))
     {}
@@ -305,9 +287,6 @@ public:
         }
         return max_c;
     }
-
-//private:
-    //friend std::istream& operator>>(std::istream& strm, Polynom<TCoef> & p);
 };
 
 /* return sum of two polynomials */
