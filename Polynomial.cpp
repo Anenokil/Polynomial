@@ -1,6 +1,6 @@
-﻿#include "Polynomial.h"
+﻿/*#include "Polynomial.h"
 
-/*template <typename T>
+template <typename T>
 Tmp<T>::Tmp()
 {
     std::cout << "abc";
