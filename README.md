@@ -1,7 +1,7 @@
 In the modul Polynomial a template class Polynom<T> is declared.
 Class provides following operations with polynomials and numbers:
 <ul>
-    <li>Add (+), subtract (-), multiply (\*), divide with remainder (/) and get remainder (%);</li>
+    <li>Add (+), subtract (-), multiply (*), divide with remainder (/) and get remainder (%);</li>
     <li>Comparaison (==, !=);</li>
     <li>Print a polynomial (<<);</li>
     <li>Calculate value of a polynomial in the given point (());</li>
