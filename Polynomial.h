@@ -38,8 +38,8 @@ template <typename TCoef>
 class Polynom
 {
 private:
-    unsigned degree_; /* the degree of the polynomial */
-    TCoef* coef_; /* coefficients of the polynomial */
+    unsigned degree_{}; /* the degree of the polynomial */
+    TCoef* coef_{}; /* coefficients of the polynomial */
     /* (coef_[0] + coef_[1] * x + ... + coef_[degree_] * x ^ degree_) */
 
     /* increase the degree by n and fill the leading coefficients with zeros */
