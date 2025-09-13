@@ -1,35 +1,29 @@
-In the modul Polynomial a template class Polynom<T> is declared.
-Class provides following operations with polynomials and numbers:
-<ul>
-    <li>Add (+), subtract (-), multiply (*), divide with remainder (/) and get remainder (%);</li>
-    <li>Comparaison (==, !=);</li>
-    <li>Print a polynomial (<<);</li>
-    <li>Calculate value of a polynomial in the given point (());</li>
-    <li>Get a coefficient of a polynomial ([]). A coefficient is returned by reference and can be changed.</li>
-</ul>
+In the module `Polynomial` a template class `Polynom<T>` is declared.
+The class provides following operations with polynomials and numbers:
+- Add (`+`), subtract (`-`), multiply (`*`), divide with remainder (`/`) and get remainder (`%`);
+- Comparaison (`==`, `!=`);
+- Print a polynomial (`<<`);
+- Calculate value of a polynomial in the given point (`()`);
+- Get a coefficient of a polynomial (`[]`). The coefficient is returned by reference and can be changed.
 
-Class provides following methods:
-<ul>
-    <li>.degree()</li>
-    Returns a degree of a polynomial.
-    <li>.printc()</li>
-    Returns a string, contains coefficients of a polynomial.
-    <li>.print(var_name = "x")</li>
-    Returns a string, contains a polynomial with given name of variable.
-    <li>.max_coef()</li>
-    Returns the maximal coefficient of a polynomial.
-</ul>
+The class provides following methods:
+- `.degree()` \
+  Return a degree of a polynomial.
+- `.coef_to_str()` \
+  Return a string, contains coefficients of a polynomial.
+- `.to_str(const string var_name = "x")` \
+  Return a string representation of a polynomial with the given variable name.
+- `.max_coef()` \
+  Return the maximal coefficient of a polynomial.
 
 There are following functions with polynomials:
-<ul>
-    <li>pw(poly, n)</li>
-    Returns the n-th power of a polynomial.
-    <li>deriv(poly, n)</li>
-    Returns the n-th derivative of a polynomial.
-    <li>integr(poly)</li>
-    Returns an integral of a polynomial.
-    <li>integr(poly, a, b)</li>
-    Returns an integral of a polynomial calculated from a to b.
-    <li>max_deriv_coef(poly1, poly2)</li>
-    Returns the maximal derivative coefficient of two polynomials.
-</ul>
+- `Polynom<T> pw(Polynom<T> const& p, unsigned n)` \
+  Return the n-th power of a polynomial.
+- `Polynom<T> deriv(Polynom<T> const& p, unsigned n = 1)` \
+  Return the n-th derivative of a polynomial.
+- `Polynom<T> integr(Polynom<T> const& p)` \
+  Return an integral of a polynomial.
+- `long double integr(Polynom<T> const& p, long double l, long double r)` \
+  Return an integral of a polynomial calculated from a to b.
+- `T max_deriv_coef(Polynom<T> const& p1, Polynom<T> const& p2)` \
+  Return the maximal derivative coefficient of two polynomials.
